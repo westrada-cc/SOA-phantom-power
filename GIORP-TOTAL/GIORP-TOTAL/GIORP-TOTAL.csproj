@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums.cs" />
+    <Compile Include="ITaxCalculator.cs" />
+    <Compile Include="Models\TaxSummary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaxCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

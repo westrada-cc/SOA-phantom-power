@@ -32,5 +32,12 @@ namespace GIORP_TOTAL
             HST = 2,
             GST = 3
         }
+
+        public enum HSTRates
+        {
+            HSTHigh = 15,
+            HSTMedium = 13,
+            HSTLow = 12
+        }
     }
 }

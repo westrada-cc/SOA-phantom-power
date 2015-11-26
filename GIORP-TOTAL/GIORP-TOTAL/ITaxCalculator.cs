@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace GIORP_TOTAL
 {
-    class Program
+    public interface ITaxCalculator
     {
-        static void Main(string[] args)
-        {
+        Models.TaxSummary CalculateTax(string provinceCode, double amount);
 
-        }
     }
 }
