@@ -8,24 +8,25 @@ namespace GIORP_TOTAL
 {
     public class Enums
     {
+        //defines codes for each of the provinces 
         public enum Regions
         {
             NL = 1,
-            NS = 2,
-            NB = 3,
-            PE = 4,
-            QC = 5,
-            ON = 6,
-            MB = 7,
-            SK = 8,
-            AB = 9,
-            BC = 10,
-            YT = 11,
-            NT = 12,
-            NU = 13
+            NS,
+            NB,
+            PE,
+            QC,
+            ON,
+            MB,
+            SK,
+            AB,
+            BC,
+            YT,
+            NT,
+            NU
         }
 
-
+        //defines types of taxes we need to calculate
         public enum Taxes
         {
             PST = 1,
@@ -33,6 +34,7 @@ namespace GIORP_TOTAL
             GST = 3
         }
 
+        //defines rates for HST
         public enum HSTRates
         {
             HSTHigh = 15,
@@ -40,6 +42,7 @@ namespace GIORP_TOTAL
             HSTLow = 12
         }
 
+        //defines rates for PST
         public enum PSTRates
         {
             PSTZero = 0,
@@ -48,6 +51,7 @@ namespace GIORP_TOTAL
             PSTHigh = 10,
         }
 
+        //defines rates for GST
         public enum GSTRate
         {
             GSTRate = 5
