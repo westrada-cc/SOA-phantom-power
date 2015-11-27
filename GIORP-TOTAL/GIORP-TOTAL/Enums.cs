@@ -39,5 +39,18 @@ namespace GIORP_TOTAL
             HSTMedium = 13,
             HSTLow = 12
         }
+
+        public enum PSTRates
+        {
+            PSTZero = 0,
+            PSTLow = 5,
+            PSTMedium = 7,
+            PSTHigh = 10,
+        }
+
+        public enum GSTRate
+        {
+            GSTRate = 5
+        }
     }
 }

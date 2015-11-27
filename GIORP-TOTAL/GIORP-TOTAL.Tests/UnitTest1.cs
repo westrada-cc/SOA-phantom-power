@@ -96,8 +96,332 @@ namespace GIORP_TOTAL.Tests
         }
         #endregion
 
-        #region TaxForRpovincesWithSpecialCases
+        #region TaxForProvincesWithSpecialCases
 
+        [TestMethod]
+        public void TaxForManitoba()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "MB";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 112.00;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+
+        [TestMethod]
+        public void TaxForSaskatchewan()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "SK";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 110.00;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+
+        [TestMethod]
+        public void TaxForAlberta()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "AB";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 105.00;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+
+        [TestMethod]
+        public void TaxForYukonTerritories()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "YT";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 105.00;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+
+        [TestMethod]
+        public void TaxForNortwestTerritories()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NT";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 105.00;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+
+
+        [TestMethod]
+        public void TaxForNunavut()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NU";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 105.00;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+        #endregion
+
+        #region TaxForSpecialProvinces
+        [TestMethod]
+        public void TaxForPrinceEdwardIsland()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "PE";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 115.50;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+
+        [TestMethod]
+        public void TaxForQuebec()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "QC";
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 114.98;
+            Assert.IsTrue(actual.TotalAmount == expected);
+        }
+        #endregion
+
+        #region HSTTaxCalculation
+        [TestMethod]
+        public void HstTaxForNewFoundLand()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NL";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 13.00;
+            Assert.IsTrue(actual.HstAmount == expected);
+        }
+
+        public void HstTaxForNovaScotia()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NS";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 15.00;
+            Assert.IsTrue(actual.HstAmount == expected);
+        }
+
+        public void HstTaxForNewBrunswick()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NB";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 13.00;
+            Assert.IsTrue(actual.HstAmount == expected);
+        }
+
+        public void HstTaxForOntario()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "ON";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 13.00;
+            Assert.IsTrue(actual.HstAmount == expected);
+        }
+
+        public void HstTaxForBritishColumbia()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "BC";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 12.00;
+            Assert.IsTrue(actual.HstAmount == expected);
+        }
+        #endregion
+
+        #region GSTTaxCalculation
+        [TestMethod]
+        public void GstTaxForPrinceEdwardIsland()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "PE";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        [TestMethod]
+        public void GstTaxForQuebec()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "QC";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        [TestMethod]
+        public void GstTaxForManitoba()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "MB";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        [TestMethod]
+        public void GstTaxForSaskatchewan()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "SK";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        [TestMethod]
+        public void GstTaxForAlberta()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "AB";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        [TestMethod]
+        public void GstTaxForYukonTerritories()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "YT";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        [TestMethod]
+        public void GstTaxForNortwestTerritories()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NT";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        [TestMethod]
+        public void GstTaxForNunavut()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NU";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.GstAmount == expected);
+        }
+
+        #endregion
+
+        #region PSTTaxCalculation
+        [TestMethod]
+        public void PstTaxForPrinceEdwardIsland()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "PE";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 10.00;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
+
+        [TestMethod]
+        public void PstTaxForQuebec()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "QC";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 9.50;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
+
+        [TestMethod]
+        public void PstTaxForManitoba()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "MB";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 7.00;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
+
+        [TestMethod]
+        public void PstTaxForSaskatchewan()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "SK";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 5.00;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
+
+        [TestMethod]
+        public void PstTaxForAlberta()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "AB";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 0.00;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
+
+        [TestMethod]
+        public void PstTaxForYukonTerritories()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "YT";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 0.00;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
+
+        [TestMethod]
+        public void PstTaxForNortwestTerritories()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NT";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 0.00;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
+
+        [TestMethod]
+        public void PstTaxForNunavut()
+        {
+            var tc = new TaxCalculator();
+            double amount = 100.00;
+            string provinceCode = "NU";
+            var actual = tc.BreakDownTax(provinceCode, amount);
+            double expected = 0.00;
+            Assert.IsTrue(actual.PstAmount == expected);
+        }
 
         #endregion
     }
