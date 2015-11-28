@@ -186,7 +186,7 @@ namespace GIORP_TOTAL.Tests
             string provinceCode = "QC";
             var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 114.98;
-            Assert.IsTrue(actual.TotalAmount == expected);
+            Assert.IsTrue(Math.Round(actual.TotalAmount, 2) == expected);
         }
         #endregion
 
@@ -197,7 +197,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "NL";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 13.00;
             Assert.IsTrue(actual.HstAmount == expected);
         }
@@ -207,7 +207,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "NS";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 15.00;
             Assert.IsTrue(actual.HstAmount == expected);
         }
@@ -217,7 +217,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "NB";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 13.00;
             Assert.IsTrue(actual.HstAmount == expected);
         }
@@ -227,7 +227,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "ON";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 13.00;
             Assert.IsTrue(actual.HstAmount == expected);
         }
@@ -237,7 +237,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "BC";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 12.00;
             Assert.IsTrue(actual.HstAmount == expected);
         }
@@ -250,7 +250,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "PE";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -261,7 +261,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "QC";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -272,7 +272,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "MB";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -283,7 +283,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "SK";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -294,7 +294,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "AB";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -305,7 +305,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "YT";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -316,7 +316,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "NT";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -327,7 +327,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "NU";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.GstAmount == expected);
         }
@@ -341,8 +341,8 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "PE";
-            var actual = tc.BreakDownTax(provinceCode, amount);
-            double expected = 10.00;
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 10.50;
             Assert.IsTrue(actual.PstAmount == expected);
         }
 
@@ -352,9 +352,9 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "QC";
-            var actual = tc.BreakDownTax(provinceCode, amount);
-            double expected = 9.50;
-            Assert.IsTrue(actual.PstAmount == expected);
+            var actual = tc.CalculateTax(provinceCode, amount);
+            double expected = 9.98;
+            Assert.IsTrue(Math.Round(actual.PstAmount, 2) == expected);
         }
 
         [TestMethod]
@@ -363,7 +363,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "MB";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 7.00;
             Assert.IsTrue(actual.PstAmount == expected);
         }
@@ -374,7 +374,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "SK";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 5.00;
             Assert.IsTrue(actual.PstAmount == expected);
         }
@@ -385,7 +385,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "AB";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 0.00;
             Assert.IsTrue(actual.PstAmount == expected);
         }
@@ -396,7 +396,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "YT";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 0.00;
             Assert.IsTrue(actual.PstAmount == expected);
         }
@@ -407,7 +407,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "NT";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 0.00;
             Assert.IsTrue(actual.PstAmount == expected);
         }
@@ -418,7 +418,7 @@ namespace GIORP_TOTAL.Tests
             var tc = new TaxCalculator();
             double amount = 100.00;
             string provinceCode = "NU";
-            var actual = tc.BreakDownTax(provinceCode, amount);
+            var actual = tc.CalculateTax(provinceCode, amount);
             double expected = 0.00;
             Assert.IsTrue(actual.PstAmount == expected);
         }

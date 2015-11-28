@@ -9,7 +9,5 @@ namespace GIORP_TOTAL
     public interface ITaxCalculator
     {
         Models.TaxSummary CalculateTax(string provinceCode, double amount);
-        Models.TaxSummary BreakDownTax(string code, double amount);
-
     }
 }
