@@ -9,11 +9,9 @@ namespace GIORP_TOTAL
 {
     public class TaxCalculator : ITaxCalculator
     {
-        public Models.TaxSummary CalculateTax(string provinceCode, double amount)
+        public TaxSummary CalculateTax(string provinceCode, double amount)
         {
-            TaxSummary ts = new TaxSummary();
-            ts = CalculateTaxByRegion(provinceCode, amount);
-            return ts;
+            return CalculateTaxByRegion(provinceCode, amount);
         }
 
         /// <summary>

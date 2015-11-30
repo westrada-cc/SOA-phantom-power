@@ -18,16 +18,19 @@
       <Value Profile="(Default)">Phantom Power</Value>
     </Setting>
     <Setting Name="ServiceName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">GIORP-TOTAL</Value>
+      <Value Profile="(Default)">PP-GIORP-TOTAL</Value>
     </Setting>
     <Setting Name="ServiceTagName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">PP-GIORP-TOTAL</Value>
+      <Value Profile="(Default)">GIORP-TOTAL</Value>
     </Setting>
     <Setting Name="ServiceSecurityLevel" Type="System.String" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="ServiceDescription" Type="System.String" Scope="User">
       <Value Profile="(Default)">Calculates taxes, net and total amount for certian Canadian province and amount.</Value>
+    </Setting>
+    <Setting Name="ShouldValidateTeam" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

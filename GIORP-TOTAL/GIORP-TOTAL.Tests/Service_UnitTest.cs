@@ -9,7 +9,7 @@ namespace GIORP_TOTAL.Tests
         [TestMethod]
         public void CreateRegisterServiceMessage_Normal1()
         {
-            var message = Service.CreateRegisterServiceMessage();
+            var message = Service.CreateRegisterServiceRequest();
             Assert.IsTrue(message != null);
         }
     }

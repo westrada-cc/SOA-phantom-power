@@ -1,5 +1,6 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
+using HL7Library;
 using System.Windows;
 using System.Windows.Input;
 
@@ -74,6 +75,14 @@ namespace ServiceConsumer.ViewModel
         /// </summary>
         public MainViewModel()
         {
+            this.Request = HL7Utility.BeginOfMessage +
+                "DRC|EXEC-SERVICE|PhantomPower|0|" + HL7Utility.EndOfSegment +
+                "SRV||PP-GIORP-TOTAL||2|||" + HL7Utility.EndOfSegment +
+                "ARG|1|province|string||ON|" + HL7Utility.EndOfSegment +
+                "ARG|2|amount|double||10|" + HL7Utility.EndOfSegment +
+                HL7Utility.EndOfMessage;
+
+                // DRC|EXEC-SERVICE|<team name>|<teamID>|  SRV||<service name>||<num args>|||  ARG|<arg position>|<arg name>|<arg data type>||<arg value>|
         }
     }
 }

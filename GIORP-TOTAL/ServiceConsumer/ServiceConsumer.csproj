@@ -118,6 +118,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HL7Library\HL7Library.csproj">
+      <Project>{d7a335b2-5b50-410c-8269-4cafc6c8b9fb}</Project>
+      <Name>HL7Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

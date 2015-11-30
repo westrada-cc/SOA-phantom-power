@@ -85,7 +85,7 @@ namespace GIORP_TOTAL.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("GIORP-TOTAL")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PP-GIORP-TOTAL")]
         public string ServiceName {
             get {
                 return ((string)(this["ServiceName"]));
@@ -97,7 +97,7 @@ namespace GIORP_TOTAL.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("PP-GIORP-TOTAL")]
+        [global::System.Configuration.DefaultSettingValueAttribute("GIORP-TOTAL")]
         public string ServiceTagName {
             get {
                 return ((string)(this["ServiceTagName"]));
@@ -128,6 +128,18 @@ namespace GIORP_TOTAL.Properties {
             }
             set {
                 this["ServiceDescription"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ShouldValidateTeam {
+            get {
+                return ((bool)(this["ShouldValidateTeam"]));
+            }
+            set {
+                this["ShouldValidateTeam"] = value;
             }
         }
     }
