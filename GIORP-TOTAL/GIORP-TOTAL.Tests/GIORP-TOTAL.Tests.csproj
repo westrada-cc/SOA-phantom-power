@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service_UnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GIORP-TOTAL\GIORP-TOTAL.csproj">
