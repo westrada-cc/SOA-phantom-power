@@ -35,6 +35,10 @@ namespace ServiceConsumer.ViewModel
                 {
                     sender.Connect(remoteEP);
 
+                    Logger.logMessage("Sending service request to IP " + serverName + ", PORT " + port.ToString() + " :" +
+                                      Environment.NewLine +
+                                      "\t>>" + request);
+
                     // Encode the data string into a byte array.
                     byte[] msg = Encoding.ASCII.GetBytes(request);
 
@@ -45,6 +49,10 @@ namespace ServiceConsumer.ViewModel
                     int bytesRec = sender.Receive(bytes);
                     response = Encoding.ASCII.GetString(bytes, 0, bytesRec);
 
+                    Logger.logMessage("Response from Published Service at IP " + serverName + ", PORT " + port.ToString() + " :" +
+                                      Environment.NewLine +
+                                      "\t>>" + response);
+
                     // Release the socket.
                     sender.Shutdown(SocketShutdown.Both);
                     sender.Close();
@@ -53,22 +61,30 @@ namespace ServiceConsumer.ViewModel
                 catch (ArgumentNullException ane) 
                 {
                     //Console.WriteLine("ArgumentNullException : {0}",ane.ToString());
+                    Logger.logException(ane);
+
                     throw ane;
                 } 
                 catch (SocketException se) 
                 {
                     //Console.WriteLine("SocketException : {0}",se.ToString());
+                    Logger.logException(se);
+
                     throw se;
                 } 
                 catch (Exception e) 
                 {
                     //Console.WriteLine("Unexpected exception : {0}", e.ToString());
+                    Logger.logException(e);
+
                     throw e;
                 }
             } 
             catch (Exception e) 
             {
                 //Console.WriteLine( e.ToString());
+                Logger.logException(e);
+
                 throw e;
             }
 
