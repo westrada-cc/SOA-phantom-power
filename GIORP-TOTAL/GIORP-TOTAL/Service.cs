@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace GIORP_TOTAL
 {
@@ -86,14 +87,24 @@ namespace GIORP_TOTAL
                 var registerTeamMessage = CreateRegisterTeamRequest(_settings.TeamName);
                 try
                 {
+                    Logger.logMessage("Calling SOA-Registry with message :" +
+                                      Environment.NewLine + 
+                                      "\t>>" + registerTeamMessage);
+
                     teamRegistractionResponse = SocketClient.SendRequest(registerTeamMessage, _settings.SOARegistryIp, _settings.SOARegistryPort);
                 }
                 catch (Exception ex)
                 {
+                    Logger.logException(ex);
+
                     throw new Exception("Could not register the team.", ex);
                 }
                 if (teamRegistractionResponse != null)
                 {
+                    Logger.logMessage("Response from SOA-Registry :" +
+                                      Environment.NewLine +
+                                      "\t>>" + teamRegistractionResponse);
+
                     var teamRegistractionResponseMessage = HL7Utility.Deserialize(teamRegistractionResponse);
                     if (teamRegistractionResponseMessage.Segments.Count > 0 &&
                         teamRegistractionResponseMessage.Segments[0].Elements.Count > 2 &&
@@ -108,16 +119,24 @@ namespace GIORP_TOTAL
                     string registerServiceResponse = null;
                     try
                     {
+                        Logger.logMessage("Calling SOA-Registry with message :" +
+                                      Environment.NewLine +
+                                      "\t>>" + registerServiceMessage);
+
                         registerServiceResponse = SocketClient.SendRequest(registerServiceMessage, _settings.SOARegistryIp, _settings.SOARegistryPort);
                     }
                     catch (Exception ex)
                     {
+                        Logger.logException(ex);
+
                         throw new Exception("Could not register the service.", ex);
                     }
                     // Parse the response.
                     if (registerServiceResponse != null)
                     {
-
+                        Logger.logMessage("Response from SOA-Registry :" +
+                                          Environment.NewLine +
+                                          "\t>>" + registerServiceResponse);
                     }
 
 
@@ -127,6 +146,8 @@ namespace GIORP_TOTAL
             catch (Exception e)
             {
                 Console.WriteLine("Exception: " + e + "InnerException: " + e.InnerException);
+
+                Logger.logException(e);
             }
 
 
@@ -171,10 +192,19 @@ namespace GIORP_TOTAL
         {
             Console.WriteLine("Service received a request:");
             Console.WriteLine(e.Request);
+
+            Logger.logMessage("Recieving service request :" +
+                  Environment.NewLine +
+                  "\t>>" + e.Request);
+
             var response = HandleRequest(e.Request);
             Console.WriteLine("Service responding with:");
             Console.WriteLine(response);
             e.Response = response;
+
+            Logger.logMessage("Responding to service request  :" +
+                              Environment.NewLine +
+                              "\t>>" + e.Request);
         }
 
         static string HandleRequest(string request)
@@ -187,6 +217,8 @@ namespace GIORP_TOTAL
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
+
+                Logger.logException(ex);
             }
             if (requestMessage != null)
             {
@@ -233,12 +265,16 @@ namespace GIORP_TOTAL
                             }
                             catch (ArgumentException ae)
                             {
+                                Logger.logException(ae);
+
                                 var errorResponseMessage = new Message();
                                 errorResponseMessage.AddSegment(PublishedServiceDirectiveElement, SOANotOkElement, "Arguments not valid.", ae.Message);
                                 return HL7Utility.Serialize(errorResponseMessage);
                             }
-                            catch (Exception)
+                            catch (Exception ex)
                             {
+                                Logger.logException(ex);
+
                                 var errorResponseMessage = new Message();
                                 errorResponseMessage.AddSegment(PublishedServiceDirectiveElement, SOANotOkElement, "There was a problem with calculating the tax summary.", "");
                                 return HL7Utility.Serialize(errorResponseMessage);
@@ -309,22 +345,34 @@ namespace GIORP_TOTAL
             string validateTeamResponse = null;
             try
             {
+                Logger.logMessage("Calling SOA-Registry with message :" +
+                                  Environment.NewLine +
+                                  "\t>>" + validateTeamRequest);
+
                 validateTeamResponse = SocketClient.SendRequest(validateTeamRequest, _settings.SOARegistryIp, _settings.SOARegistryPort);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
+
+                Logger.logException(ex);
             }
             if (validateTeamResponse != null)
             {
                 Message message = null;
                 try
                 {
+                    Logger.logMessage("Response from SOA-Registry :" +
+                                      Environment.NewLine +
+                                      "\t>>" + validateTeamResponse);
+
                     message = HL7Utility.Deserialize(validateTeamResponse);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine("Exception: " + ex.Message);
+
+                    Logger.logException(ex);
                 }
                 if (message != null && 
                     message.Segments != null &&
