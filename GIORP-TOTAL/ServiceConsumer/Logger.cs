@@ -13,17 +13,17 @@ using System.Diagnostics;
 /// </summary>
 public class Logger
 {
-	public Logger()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    public Logger()
+    {
+        //
+        // TODO: Add constructor logic here
+        //
+    }
 
-    public static bool log(Exception exception)
+    public static bool logException(Exception exception)
     {
         bool status = false;
-        string  logFilePathName = GetDefaultPath();
+        string logFilePathName = GetDefaultPath();
         if (!File.Exists(logFilePathName))
         {
             if (CheckForDirectory(logFilePathName))
@@ -56,10 +56,10 @@ public class Logger
         return status;
     }
 
-    public static bool log(string logFilePathName, Exception exception)
+    public static bool logException(string logFilePathName, Exception exception)
     {
         bool status = false;
-        
+
         if (logFilePathName == "" ||
             logFilePathName == null)
         {
@@ -91,7 +91,85 @@ public class Logger
 
             status = true;
         }
-        catch(Exception ex)
+        catch (Exception ex)
+        {
+            //There was an error return null.
+            Console.WriteLine(ex.ToString());
+        }
+
+        return status;
+    }
+
+    public static bool logMessage(string message)
+    {
+        bool status = false;
+        string logFilePathName = GetDefaultPath();
+        if (!File.Exists(logFilePathName))
+        {
+            if (CheckForDirectory(logFilePathName))
+            {
+                FileStream fileStream = new FileStream(logFilePathName, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                fileStream.Close();
+            }
+        }
+        try
+        {
+            StreamWriter streamWriter = new StreamWriter(logFilePathName, true);
+
+            streamWriter.WriteLine("Date        : " + DateTime.Now.ToLongTimeString());
+            streamWriter.WriteLine("Time        : " + DateTime.Now.ToShortDateString());
+            streamWriter.WriteLine("Message     : " + message);
+            streamWriter.WriteLine("********************************************************");
+
+            streamWriter.Flush();
+            streamWriter.Close();
+
+            status = true;
+        }
+        catch (Exception ex)
+        {
+            //There was an error return null.
+            Console.WriteLine(ex.ToString());
+        }
+
+        return status;
+    }
+
+    public static bool logMessage(string message, string logFilePathName)
+    {
+        bool status = false;
+
+        if (logFilePathName == "" ||
+            logFilePathName == null)
+        {
+            logFilePathName = GetDefaultPath();
+        }
+        else
+        {
+            if (!File.Exists(logFilePathName))
+            {
+                if (CheckForDirectory(logFilePathName))
+                {
+                    FileStream fileStream = new FileStream(logFilePathName, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                    fileStream.Close();
+                }
+            }
+        }
+        try
+        {
+            StreamWriter streamWriter = new StreamWriter(logFilePathName, true);
+
+            streamWriter.WriteLine("Date        : " + DateTime.Now.ToLongTimeString());
+            streamWriter.WriteLine("Time        : " + DateTime.Now.ToShortDateString());
+            streamWriter.WriteLine("Message     : " + message);
+            streamWriter.WriteLine("********************************************************");
+
+            streamWriter.Flush();
+            streamWriter.Close();
+
+            status = true;
+        }
+        catch (Exception ex)
         {
             //There was an error return null.
             Console.WriteLine(ex.ToString());
