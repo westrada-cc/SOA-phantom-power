@@ -86,6 +86,10 @@
             </tr>
         </table>
     </div>
+
+    <div id="alertDiv" runat="server"> 
+        <asp:Label ID="alert" runat="server"></asp:Label>
+    </div>        
     </form>
 </body>
 </html>
