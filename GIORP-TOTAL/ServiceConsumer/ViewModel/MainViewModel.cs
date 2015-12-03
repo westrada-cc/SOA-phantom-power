@@ -68,6 +68,7 @@ namespace ServiceConsumer.ViewModel
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                Logger.logException(ex);
             }
         }
         /// <summary>
