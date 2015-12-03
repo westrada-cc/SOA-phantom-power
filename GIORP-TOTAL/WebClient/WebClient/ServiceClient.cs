@@ -37,7 +37,8 @@ namespace WebClient
 
                     Logger.logMessage("Sending service request to IP " + serverName + ", PORT " + port.ToString() + " :" +
                                       Environment.NewLine +
-                                      "\t>>" + request);
+                                      "\t>>" + request,
+                                      AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt");
 
                     // Encode the data string into a byte array.
                     byte[] msg = Encoding.ASCII.GetBytes(request);
@@ -51,7 +52,8 @@ namespace WebClient
 
                     Logger.logMessage("Response from Published Service at IP " + serverName + ", PORT " + port.ToString() + " :" +
                                       Environment.NewLine +
-                                      "\t>>" + response);
+                                      "\t>>" + response,
+                                      AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt");
 
                     // Release the socket.
                     sender.Shutdown(SocketShutdown.Both);
@@ -61,21 +63,21 @@ namespace WebClient
                 catch (ArgumentNullException ane) 
                 {
                     //Console.WriteLine("ArgumentNullException : {0}",ane.ToString());
-                    Logger.logException(ane);
+                    Logger.logException(AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt", ane);
 
                     throw ane;
                 } 
                 catch (SocketException se) 
                 {
                     //Console.WriteLine("SocketException : {0}",se.ToString());
-                    Logger.logException(se);
+                    Logger.logException(AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt", se);
 
                     throw se;
                 } 
                 catch (Exception e) 
                 {
                     //Console.WriteLine("Unexpected exception : {0}", e.ToString());
-                    Logger.logException(e);
+                    Logger.logException(AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt", e);
 
                     throw e;
                 }
@@ -83,7 +85,7 @@ namespace WebClient
             catch (Exception e) 
             {
                 //Console.WriteLine( e.ToString());
-                Logger.logException(e);
+                Logger.logException(AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt", e);
 
                 throw e;
             }
