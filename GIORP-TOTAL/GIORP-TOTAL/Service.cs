@@ -87,10 +87,7 @@ namespace GIORP_TOTAL
                 var registerTeamMessage = CreateRegisterTeamRequest(_settings.TeamName);
                 try
                 {
-                    Logger.logMessage("Calling SOA-Registry with message :" +
-                                      Environment.NewLine + 
-                                      "\t>>" + registerTeamMessage);
-
+                    logServerMessage("Calling SOA-Registry with message :", registerTeamMessage);
                     teamRegistractionResponse = SocketClient.SendRequest(registerTeamMessage, _settings.SOARegistryIp, _settings.SOARegistryPort);
                 }
                 catch (Exception ex)
@@ -101,9 +98,7 @@ namespace GIORP_TOTAL
                 }
                 if (teamRegistractionResponse != null)
                 {
-                    Logger.logMessage("Response from SOA-Registry :" +
-                                      Environment.NewLine +
-                                      "\t>>" + teamRegistractionResponse);
+                    logServerMessage("Response from SOA-Registry :", teamRegistractionResponse);
 
                     var teamRegistractionResponseMessage = HL7Utility.Deserialize(teamRegistractionResponse);
                     if (teamRegistractionResponseMessage.Segments.Count > 0 &&
@@ -119,9 +114,7 @@ namespace GIORP_TOTAL
                     string registerServiceResponse = null;
                     try
                     {
-                        Logger.logMessage("Calling SOA-Registry with message :" +
-                                      Environment.NewLine +
-                                      "\t>>" + registerServiceMessage);
+                        logServerMessage("Calling SOA-Registry with message :", registerServiceMessage);
 
                         registerServiceResponse = SocketClient.SendRequest(registerServiceMessage, _settings.SOARegistryIp, _settings.SOARegistryPort);
                     }
@@ -134,9 +127,7 @@ namespace GIORP_TOTAL
                     // Parse the response.
                     if (registerServiceResponse != null)
                     {
-                        Logger.logMessage("Response from SOA-Registry :" +
-                                          Environment.NewLine +
-                                          "\t>>" + registerServiceResponse);
+                        logServerMessage("Response from SOA-Registry :", registerServiceResponse);
                     }
 
 
@@ -193,18 +184,14 @@ namespace GIORP_TOTAL
             Console.WriteLine("Service received a request:");
             Console.WriteLine(e.Request);
 
-            Logger.logMessage("Recieving service request :" +
-                  Environment.NewLine +
-                  "\t>>" + e.Request);
+            logServerMessage("Recieving service request :", e.Request);
 
             var response = HandleRequest(e.Request);
             Console.WriteLine("Service responding with:");
             Console.WriteLine(response);
             e.Response = response;
 
-            Logger.logMessage("Responding to service request  :" +
-                              Environment.NewLine +
-                              "\t>>" + e.Request);
+            logServerMessage("Responding to service request  :", e.Response);
         }
 
         static string HandleRequest(string request)
@@ -345,16 +332,13 @@ namespace GIORP_TOTAL
             string validateTeamResponse = null;
             try
             {
-                Logger.logMessage("Calling SOA-Registry with message :" +
-                                  Environment.NewLine +
-                                  "\t>>" + validateTeamRequest);
+                logServerMessage("Calling SOA-Registry with message :", validateTeamRequest);
 
                 validateTeamResponse = SocketClient.SendRequest(validateTeamRequest, _settings.SOARegistryIp, _settings.SOARegistryPort);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.Message);
-
                 Logger.logException(ex);
             }
             if (validateTeamResponse != null)
@@ -362,9 +346,7 @@ namespace GIORP_TOTAL
                 Message message = null;
                 try
                 {
-                    Logger.logMessage("Response from SOA-Registry :" +
-                                      Environment.NewLine +
-                                      "\t>>" + validateTeamResponse);
+                    logServerMessage("Response from SOA-Registry :", validateTeamResponse);
 
                     message = HL7Utility.Deserialize(validateTeamResponse);
                 }
@@ -400,6 +382,29 @@ namespace GIORP_TOTAL
             // INF|<team name>|<teamID>|<service tag name>| 
             message.AddSegment(InfoDirectiveElement, teamName, teamId, _settings.ServiceTagName);
             return HL7Utility.Serialize(message);
+        }
+
+        private static void logServerMessage(string messageHeader, string HL7Message)
+        {
+            //Deserialize the message
+            Message tempMsg = HL7Utility.Deserialize(HL7Message);
+            StringBuilder sb = new StringBuilder();
+
+            //Format the segments
+            foreach (Segment seg in tempMsg.Segments)
+            {
+                sb.Append("\t\t>>");
+                foreach(string s in seg.Elements)
+                {
+                    sb.AppendFormat("{0}|", s);
+                }
+                sb.Append(Environment.NewLine);
+            }
+
+            //Write to log file
+            Logger.logMessage(messageHeader +
+                              Environment.NewLine +
+                              sb.ToString());
         }
     }
 }
