@@ -6,6 +6,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using HL7Library;
+using GIORP_TOTAL;
 
 namespace WebClient
 {
@@ -35,10 +37,7 @@ namespace WebClient
                 {
                     sender.Connect(remoteEP);
 
-                    Logger.logMessage("Sending service request to IP " + serverName + ", PORT " + port.ToString() + " :" +
-                                      Environment.NewLine +
-                                      "\t>>" + request,
-                                      AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt");
+                    logClientMessage("Sending service request to IP " + serverName + ", PORT " + port.ToString() + " :", request);
 
                     // Encode the data string into a byte array.
                     byte[] msg = Encoding.ASCII.GetBytes(request);
@@ -50,10 +49,7 @@ namespace WebClient
                     int bytesRec = sender.Receive(bytes);
                     response = Encoding.ASCII.GetString(bytes, 0, bytesRec);
 
-                    Logger.logMessage("Response from Published Service at IP " + serverName + ", PORT " + port.ToString() + " :" +
-                                      Environment.NewLine +
-                                      "\t>>" + response,
-                                      AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt");
+                    logClientMessage("Response from Published Service at IP " + serverName + ", PORT " + port.ToString() + " :", response);
 
                     // Release the socket.
                     sender.Shutdown(SocketShutdown.Both);
@@ -91,6 +87,30 @@ namespace WebClient
             }
 
             return response;
+        }
+
+        private static void logClientMessage(string messageHeader, string HL7Message)
+        {
+            //Deserialize the message
+            Message tempMsg = HL7Utility.Deserialize(HL7Message);
+            StringBuilder sb = new StringBuilder();
+
+            //Format the segments
+            foreach (Segment seg in tempMsg.Segments)
+            {
+                sb.Append("\t\t>>");
+                foreach (string s in seg.Elements)
+                {
+                    sb.AppendFormat("{0}|", s);
+                }
+                sb.Append(Environment.NewLine);
+            }
+
+            //Write to log file
+            Logger.logMessage(messageHeader +
+                              Environment.NewLine +
+                              sb.ToString(),
+                              AppDomain.CurrentDomain.BaseDirectory + "\\" + "LogFile.txt");
         }
     }
 }
