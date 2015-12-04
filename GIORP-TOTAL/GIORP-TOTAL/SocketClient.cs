@@ -11,6 +11,8 @@ namespace GIORP_TOTAL
 {
     public static class SocketClient
     {
+        const int timeout = 10000;
+
         public static string SendRequest(string request, string serverName, int port) 
         {
             string response = null;
@@ -29,8 +31,8 @@ namespace GIORP_TOTAL
                 // Create a TCP/IP  socket.
                 Socket sender = new Socket(ipAddress.AddressFamily, 
                     SocketType.Stream, ProtocolType.Tcp );
-                sender.ReceiveTimeout = 10000;
-                sender.SendTimeout = 10000;
+                sender.ReceiveTimeout = timeout;
+                sender.SendTimeout = timeout;
                 // Connect the socket to the remote endpoint. Catch any errors.
                 try 
                 {
@@ -48,7 +50,7 @@ namespace GIORP_TOTAL
 
                     // Receive the response from the remote device.
                     int bytesRec = sender.Receive(bytes);
-                    response = Encoding.ASCII.GetString(bytes, 0, bytesRec);
+                    response = Encoding.ASCII.GetString(bytes, 0, bytesRec - 1);
 
                     Logger.logMessage("Response from Published Service at IP " + serverName + ", PORT " + port.ToString() + " :" +
                                       Environment.NewLine +

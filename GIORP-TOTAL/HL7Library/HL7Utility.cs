@@ -13,7 +13,7 @@ namespace HL7Library
     {
         public const char BeginOfMessage = (char)11;
         public const char EndOfSegment = (char)13;
-        public const char EndOfMessage = (char)28;
+        public static string EndOfMessage = ((char)28).ToString() +  ((char)13).ToString();
         public const char ElementDelimiter = '|';
         public const uint MinimumElementDilimiterCount = 2;
 

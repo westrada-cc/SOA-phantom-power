@@ -149,7 +149,7 @@ namespace GIORP_TOTAL
         {
             var message = new Message();
             message.AddSegment(CommandDirectiveElement, RegisterTeamElement, "", "");
-            message.AddSegment(InfoDirectiveElement, teamName);
+            message.AddSegment(InfoDirectiveElement, teamName,"","");
             return HL7Utility.Serialize(message);
         }
 
