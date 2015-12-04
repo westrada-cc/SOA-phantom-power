@@ -104,9 +104,14 @@ namespace GIORP_TOTAL
                     if (teamRegistractionResponseMessage.Segments.Count > 0 &&
                         teamRegistractionResponseMessage.Segments[0].Elements.Count > 2 &&
                         teamRegistractionResponseMessage.Segments[0].Elements[0] == SOADirectiveElement &&
-                        teamRegistractionResponseMessage.Segments[0].Elements[0] == "OK")
+                        teamRegistractionResponseMessage.Segments[0].Elements[1] == "OK")
                     {
-                        Console.WriteLine("Team Registered.");
+                        _teamId = teamRegistractionResponseMessage.Segments[0].Elements[2];
+                        Console.WriteLine("Team Registered with teamID " + _teamId);
+                    }
+                    else
+                    {
+                        throw new Exception("Team registration response is not in valid format.");
                     }
 
                     // Register service
@@ -117,21 +122,27 @@ namespace GIORP_TOTAL
                         logServerMessage("Calling SOA-Registry with message :", registerServiceMessage);
 
                         registerServiceResponse = SocketClient.SendRequest(registerServiceMessage, _settings.SOARegistryIp, _settings.SOARegistryPort);
+                        logServerMessage("Response from SOA-Registry :", registerServiceResponse);
+                        Console.WriteLine("Response from SOA-Registry :" + registerServiceResponse);
+
+                        var registerServiceResponseMessage = HL7Utility.Deserialize(registerServiceMessage);
+                        if (registerServiceResponseMessage.Segments.Count > 0 &&
+                            registerServiceResponseMessage.Segments[0].Elements.Count > 2 &&
+                            registerServiceResponseMessage.Segments[0].Elements[0] == SOADirectiveElement &&
+                            registerServiceResponseMessage.Segments[0].Elements[1] == "OK")
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            throw new Exception("Registration failed.");
+                        }
                     }
                     catch (Exception ex)
                     {
                         Logger.logException(ex);
-
                         throw new Exception("Could not register the service.", ex);
                     }
-                    // Parse the response.
-                    if (registerServiceResponse != null)
-                    {
-                        logServerMessage("Response from SOA-Registry :", registerServiceResponse);
-                    }
-
-
-                    return true;
                 }
             }
             catch (Exception e)
@@ -161,19 +172,19 @@ namespace GIORP_TOTAL
             // SRV|<tag name>|<service name>|<security level>|<num args>|<num responses>|<description>|
             message.AddSegment(ServiceDirectiveElement, _settings.ServiceTagName, _settings.ServiceName, _settings.ServiceSecurityLevel, "2", "5", _settings.ServiceDescription);
             // ARG|<arg position>|<arg name>|<arg data type>|[mandatory | optional]||
-            message.AddSegment(ArgumentDirectiveElement, "1", "province", "string", "mandatory");
+            message.AddSegment(ArgumentDirectiveElement, "1", "province", "string", "mandatory","");
             // ARG|<arg position>|<arg name>|<arg data type>|[mandatory | optional]||
-            message.AddSegment(ArgumentDirectiveElement, "2", "amount", "double", "mandatory");
+            message.AddSegment(ArgumentDirectiveElement, "2", "amount", "double", "mandatory","");
             // RSP|<resp position>|<resp name>|<resp data type>||
-            message.AddSegment(ResponseDirectiveElement, "1", "NetAmount", "double");
+            message.AddSegment(ResponseDirectiveElement, "1", "NetAmount", "double", "");
             // RSP|<resp position>|<resp name>|<resp data type>||
-            message.AddSegment(ResponseDirectiveElement, "2", "PstAmount", "double");
+            message.AddSegment(ResponseDirectiveElement, "2", "PstAmount", "double", "");
             // RSP|<resp position>|<resp name>|<resp data type>||
-            message.AddSegment(ResponseDirectiveElement, "3", "HstAmount", "double");
+            message.AddSegment(ResponseDirectiveElement, "3", "HstAmount", "double", "");
             // RSP|<resp position>|<resp name>|<resp data type>||
-            message.AddSegment(ResponseDirectiveElement, "4", "GstAmount", "double");
+            message.AddSegment(ResponseDirectiveElement, "4", "GstAmount", "double", "");
             // RSP|<resp position>|<resp name>|<resp data type>||
-            message.AddSegment(ResponseDirectiveElement, "5", "TotalAmount", "double");
+            message.AddSegment(ResponseDirectiveElement, "5", "TotalAmount", "double", "");
             // MCH|<published server IP>|<published port>| 
             message.AddSegment(MCHDirectiveElement, _settings.ServicePublishIp, _settings.ServicePublishPort.ToString());
             return HL7Utility.Serialize(message);
