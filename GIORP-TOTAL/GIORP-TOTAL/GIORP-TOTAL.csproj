@@ -70,6 +70,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HL7Library.Tests\HL7Library.Tests.csproj">
+      <Project>{8f827d58-ea55-4a7c-9419-b44cd0a5d63a}</Project>
+      <Name>HL7Library.Tests</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HL7Library\HL7Library.csproj">
       <Project>{d7a335b2-5b50-410c-8269-4cafc6c8b9fb}</Project>
       <Name>HL7Library</Name>

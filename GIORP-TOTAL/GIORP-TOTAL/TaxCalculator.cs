@@ -1,8 +1,10 @@
 ﻿using GIORP_TOTAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace GIORP_TOTAL
@@ -146,6 +148,17 @@ namespace GIORP_TOTAL
         /// <returns>an TaxSummary objec, which contains the NetAmount, PST, HST, GST and total after taxes</returns>
         private Models.TaxSummary CalculateTaxByRegion(string region, double amount)
         {
+            string codePattern = @"^(NL|NS|NB|PE|QC|ON|MB|SK|AB|BC|YT|NT|NU)$";
+            Regex rg = new Regex(codePattern, RegexOptions.IgnoreCase);
+            Match mch = rg.Match(region);
+            if(!mch.Success)
+            {
+                throw new ArgumentException("The region code is not in a valid format, Format should be NL|NS|NB|PE|QC|ON|MB|SK|AB|BC|YT|NT|NU");
+            }
+            if (amount < 0)
+            {
+                throw new ArgumentException("The amount cannot be negative.");
+            }
             #region method Initializers
             TaxSummary ts = new TaxSummary();
             ts.NetAmount = amount;
@@ -154,6 +167,8 @@ namespace GIORP_TOTAL
             string pst = string.Empty;
             string gst = string.Empty;
             const double qcPstTaxRate = 9.5d;
+
+           
 
             //get tax type pst and gst to be applied where available
             if (taxType.Contains('-'))
