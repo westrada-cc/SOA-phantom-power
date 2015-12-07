@@ -29,9 +29,32 @@ namespace WebClient
         const string SOANotOkElement = "NOT-OK";
         const string ExecuteServiceElement = "EXEC-SERVICE";
 
+        string teamName;
+        string teamID;
+        string serviceName;
+        string numArgs;
+        string serviceDescription;
+        string argName1;
+        string argDataType1;
+        string argName2;
+        string argDataType2;
+        string IP;
+        int port;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             results.Visible = false;
+            teamName = (string) Session["TeamName"];
+            teamID = (string) Session["TeamID"];
+            serviceName = (string) Session["ServiceName"];
+            numArgs = (string) Session["NumArgs"];
+            serviceDescription = (string) Session["ServiceDescription"];
+            argName1 = (string) Session["ArgName1"];
+            argDataType1 = (string) Session["ArgDataType1"];
+            argName2 = (string) Session["ArgName2"];
+            argDataType2 = (string) Session["ArgDataType2"];
+            IP = (string) Session["IPAddress"];
+            port = (int) Session["portNumber"];
         }
 
         protected void clearButton_Click(object sender, EventArgs e)
@@ -58,20 +81,34 @@ namespace WebClient
             try
             {
                 //  DRC|EXEC-SERVICE|PhantomPower|0|
-                msg.AddSegment(CommandDirectiveElement, ExecuteServiceElement, "PhantomPower", "0");
+                msg.AddSegment(CommandDirectiveElement, ExecuteServiceElement, teamName, teamID);
                 //  SRV||PP-GIORP-TOTAL||2|||
-                msg.AddSegment(ServiceDirectiveElement, "", "PP-GIORP-TOTAL", "", "2", "", "");
+                msg.AddSegment(ServiceDirectiveElement, "", serviceName, "", numArgs, "", "");
                 //  ARG|1|province|string||PROVINCE CODE|
-                msg.AddSegment(ArgumentDirectiveElement, "1", "province", "string", "", province);
+                if (argDataType1.IndexOf("string", 0, StringComparison.CurrentCultureIgnoreCase) != -1)
+                {
+                    msg.AddSegment(ArgumentDirectiveElement, "1", argName1, argDataType1.ToLower(), "", province);
+                }
+                else
+                {
+                    msg.AddSegment(ArgumentDirectiveElement, "1", argName1, argDataType1.ToLower(), "", amount.ToString());
+                }
                 //  ARG|2|amount|double||AMOUNT|
-                msg.AddSegment(ArgumentDirectiveElement, "2", "amount", "double", "", amount.ToString());
+                if (argDataType2.IndexOf("double", 0, StringComparison.CurrentCultureIgnoreCase) != -1)
+                {
+                    msg.AddSegment(ArgumentDirectiveElement, "2", argName2, argDataType2.ToLower(), "", amount.ToString());
+                }
+                else
+                {
+                    msg.AddSegment(ArgumentDirectiveElement, "2", argName2, argDataType2.ToLower(), "", province);
+                }
 
                 //Serialize the message
                 request = HL7Utility.Serialize(msg);
                 //Send the request
-                response = ServiceClient.SendRequest(request, "localhost", 15000);
+                response = ServiceClient.SendRequest(request, IP, port);
                 //Deserialize the response
-                msg =  HL7Utility.Deserialize(response);   
+                msg = HL7Utility.Deserialize(response);   
              
                 if (msg.Segments[0].Elements[1] == SOAOkElement)
                 {
