@@ -1,6 +1,7 @@
 ﻿using GIORP_TOTAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -156,6 +157,8 @@ namespace GIORP_TOTAL
             string pst = string.Empty;
             string gst = string.Empty;
             const double qcPstTaxRate = 9.5d;
+
+           
 
             //get tax type pst and gst to be applied where available
             if (taxType.Contains('-'))

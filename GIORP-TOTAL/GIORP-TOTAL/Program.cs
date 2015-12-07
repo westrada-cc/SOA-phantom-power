@@ -11,6 +11,7 @@ namespace GIORP_TOTAL
     class Program
     {
         static void Main(string[] args)
-        {}
+        {
+        }
     }
 }
