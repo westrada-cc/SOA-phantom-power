@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GIORP_TOTAL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SOARegistryIp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="SOARegistryPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3128</Value>
+    </Setting>
+    <Setting Name="ServicePublishIp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="ServicePublishPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+    <Setting Name="TeamName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Phantom Power</Value>
+    </Setting>
+    <Setting Name="ServiceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PP-GIORP-TOTAL</Value>
+    </Setting>
+    <Setting Name="ServiceTagName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GIORP-TOTAL</Value>
+    </Setting>
+    <Setting Name="ServiceSecurityLevel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ServiceDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Calculates taxes, net and total amount for certian Canadian province and amount.</Value>
+    </Setting>
+    <Setting Name="ShouldValidateTeam" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

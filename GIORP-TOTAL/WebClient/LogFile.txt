@@ -1,0 +1,20 @@
+Date        : 9:57:56 AM
+Time        : 12/4/2015
+Message     : Sending service request to IP localhost, PORT 15000 :
+		>>DRC|EXEC-SERVICE|PhantomPower|0|
+		>>SRV||PP-GIORP-TOTAL||2|||
+		>>ARG|1|province|string||MB|
+		>>ARG|2|amount|double||10|
+
+********************************************************
+Date        : 9:57:56 AM
+Time        : 12/4/2015
+Message     : Response from Published Service at IP localhost, PORT 15000 :
+		>>PUB|OK|||5|
+		>>RSP|1|NetAmount|double|10|
+		>>RSP|2|PstAmount|double|0.7|
+		>>RSP|3|HstAmount|double|0|
+		>>RSP|4|GstAmount|double|0.5|
+		>>RSP|5|TotalAmount|double|11.2|
+
+********************************************************
