@@ -1336,3 +1336,13 @@ Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
 		>>RSP|5|TotalAmount|double|11.2|
 
 ********************************************************
+Date        : 3:46:21 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.151:3128
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 3:46:21 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.151:3128
+Type        : System.Net.Sockets.SocketException
+********************************************************

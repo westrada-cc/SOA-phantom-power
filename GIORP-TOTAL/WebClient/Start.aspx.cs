@@ -13,25 +13,26 @@ namespace WebClient
 {
     public partial class Start : System.Web.UI.Page
     {
-        const string CommandDirectiveElement = "DRC";
-        const string SOADirectiveElement = "SOA";
-        const string ArgumentDirectiveElement = "ARG";
-        const string ResponseDirectiveElement = "RSP";
-        const string MCHDirectiveElement = "MCH";
-        const string InfoDirectiveElement = "INF";
-        const string ServiceDirectiveElement = "SRV";
-        const string PublishedServiceDirectiveElement = "PUB";
+        private const string CommandDirectiveElement = "DRC";
+        private const string SOADirectiveElement = "SOA";
+        private const string ArgumentDirectiveElement = "ARG";
+        private const string ResponseDirectiveElement = "RSP";
+        private const string MCHDirectiveElement = "MCH";
+        private const string InfoDirectiveElement = "INF";
+        private const string ServiceDirectiveElement = "SRV";
+        private const string PublishedServiceDirectiveElement = "PUB";
 
-        const string RegisterTeamElement = "REG-TEAM";
-        const string PublishServiceElement = "PUB-SERVICE";
-        const string QueryTeamElement = "QUERY-TEAM";
-        const string QueryServiceElement = "QUERY-SERVICE";
-        const string SOAOkElement = "OK";
-        const string SOANotOkElement = "NOT-OK";
-        const string ExecuteServiceElement = "EXEC-SERVICE";
+        private const string RegisterTeamElement = "REG-TEAM";
+        private const string PublishServiceElement = "PUB-SERVICE";
+        private const string QueryTeamElement = "QUERY-TEAM";
+        private const string QueryServiceElement = "QUERY-SERVICE";
+        private const string SOAOkElement = "OK";
+        private const string SOANotOkElement = "NOT-OK";
+        private const string ExecuteServiceElement = "EXEC-SERVICE";
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            // set default div visibilities
             errorServiceDiv.Visible = false;
             noServiceDiv.Visible = false;
         }
@@ -41,6 +42,7 @@ namespace WebClient
             Message msg = new Message();
             string request = "";
             string response = "";
+            int idVerification = 0;
 
             try
             {
@@ -61,6 +63,13 @@ namespace WebClient
                     errorServiceDiv.Visible = false;
                     noServiceDiv.Visible = false;
 
+                    // double check if the idTextBox value is valid
+                    if (Int32.TryParse(idTextBox.Text, out idVerification) == false)
+                    {
+                        throw new Exception("Team ID was invalid");
+                    } 
+
+                    // load up the session variables
                     Session["TeamName"] = nameTextBox.Text;
                     Session["TeamID"] = idTextBox.Text;
                     Session["ServiceName"] = msg.Segments[1].Elements[2];
@@ -73,6 +82,7 @@ namespace WebClient
                     Session["IPAddress"] = GetIPAddress(msg);
                     Session["portNumber"] = GetPortNumber(msg);
 
+                    // transfer to the next page
                     Server.Transfer("default.aspx", true);
 
                 }

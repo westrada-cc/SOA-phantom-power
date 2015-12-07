@@ -40,6 +40,15 @@ namespace WebClient {
         protected global::System.Web.UI.WebControls.TextBox nameTextBox;
         
         /// <summary>
+        /// teamNameRequiredValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator teamNameRequiredValidator;
+        
+        /// <summary>
         /// idTextBox control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox idTextBox;
+        
+        /// <summary>
+        /// teamIDRequiredValildator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator teamIDRequiredValildator;
         
         /// <summary>
         /// submitButton control.

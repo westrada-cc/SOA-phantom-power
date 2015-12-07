@@ -8,53 +8,68 @@ using GIORP_TOTAL;
 using GIORP_TOTAL.Models;
 using HL7Library;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace WebClient
 {
     public partial class _default : System.Web.UI.Page
     {
-        const string CommandDirectiveElement = "DRC";
-        const string SOADirectiveElement = "SOA";
-        const string ArgumentDirectiveElement = "ARG";
-        const string ResponseDirectiveElement = "RSP";
-        const string MCHDirectiveElement = "MCH";
-        const string InfoDirectiveElement = "INF";
-        const string ServiceDirectiveElement = "SRV";
-        const string PublishedServiceDirectiveElement = "PUB";
+        private const string CommandDirectiveElement = "DRC";
+        private const string SOADirectiveElement = "SOA";
+        private const string ArgumentDirectiveElement = "ARG";
+        private const string ResponseDirectiveElement = "RSP";
+        private const string MCHDirectiveElement = "MCH";
+        private const string InfoDirectiveElement = "INF";
+        private const string ServiceDirectiveElement = "SRV";
+        private const string PublishedServiceDirectiveElement = "PUB";
 
-        const string RegisterTeamElement = "REG-TEAM";
-        const string PublishServiceElement = "PUB-SERVICE";
-        const string QueryTeamElement = "QUERY-TEAM";
-        const string SOAOkElement = "OK";
-        const string SOANotOkElement = "NOT-OK";
-        const string ExecuteServiceElement = "EXEC-SERVICE";
+        private const string RegisterTeamElement = "REG-TEAM";
+        private const string PublishServiceElement = "PUB-SERVICE";
+        private const string QueryTeamElement = "QUERY-TEAM";
+        private const string SOAOkElement = "OK";
+        private const string SOANotOkElement = "NOT-OK";
+        private const string ExecuteServiceElement = "EXEC-SERVICE";
+        private const string amountPattern = @"^([1-9]+\.?[0-9]{1,2}|[0]{1}\.?[0-9]{2}|\.?[0-9]{1,2})$";
 
-        string teamName;
-        string teamID;
-        string serviceName;
-        string numArgs;
-        string serviceDescription;
-        string argName1;
-        string argDataType1;
-        string argName2;
-        string argDataType2;
-        string IP;
-        int port;
+        private string teamName;
+        private string teamID;
+        private string serviceName;
+        private string numArgs;
+        private string serviceDescription;
+        private string argName1;
+        private string argDataType1;
+        private string argName2;
+        private string argDataType2;
+        private string IP;
+        private int port;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             results.Visible = false;
-            teamName = (string) Session["TeamName"];
-            teamID = (string) Session["TeamID"];
-            serviceName = (string) Session["ServiceName"];
-            numArgs = (string) Session["NumArgs"];
-            serviceDescription = (string) Session["ServiceDescription"];
-            argName1 = (string) Session["ArgName1"];
-            argDataType1 = (string) Session["ArgDataType1"];
-            argName2 = (string) Session["ArgName2"];
-            argDataType2 = (string) Session["ArgDataType2"];
-            IP = (string) Session["IPAddress"];
-            port = (int) Session["portNumber"];
+
+            try
+            {
+                // set all the session variables
+                teamName = (string)Session["TeamName"];
+                teamID = (string)Session["TeamID"];
+                serviceName = (string)Session["ServiceName"];
+                numArgs = (string)Session["NumArgs"];
+                serviceDescription = (string)Session["ServiceDescription"];
+                argName1 = (string)Session["ArgName1"];
+                argDataType1 = (string)Session["ArgDataType1"];
+                argName2 = (string)Session["ArgName2"];
+                argDataType2 = (string)Session["ArgDataType2"];
+                IP = (string)Session["IPAddress"];
+                port = (int)Session["portNumber"];
+            }
+            catch (Exception ex)
+            {
+                alert.Text = ex.Message;
+                Logger.logException(ex);
+
+                // redirect back to the start page if there's a session variable exception
+                Response.Redirect("Start.aspx");
+            }
         }
 
         protected void clearButton_Click(object sender, EventArgs e)
@@ -67,19 +82,23 @@ namespace WebClient
         {
             string province;
             double amount = 0;
-            //TaxCalculator tc = new TaxCalculator();
             string request = "";
             string response = "";
             TaxSummary taxes = new GIORP_TOTAL.Models.TaxSummary();
             Message msg = new Message();
 
-            // call the service
             province = provinceList.SelectedValue;
             double.TryParse(priceBox.Text, out amount);
 
-            //GIORP_TOTAL.Models.TaxSummary taxes = tc.CalculateTax(province, amount);
             try
             {
+                Regex priceRegex = new Regex(amountPattern);
+
+                if (!priceRegex.IsMatch(amount.ToString()))
+                {
+                    throw new Exception("The amount value was invalid");
+                }
+
                 //  DRC|EXEC-SERVICE|PhantomPower|0|
                 msg.AddSegment(CommandDirectiveElement, ExecuteServiceElement, teamName, teamID);
                 //  SRV||PP-GIORP-TOTAL||2|||
@@ -120,20 +139,20 @@ namespace WebClient
                     alert.Text = msg.Segments[0].Elements[3];
                 }
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                alert.Text = ex.ToString();
+                alert.Text = ex.Message;
                 Logger.logException(ex);
             }
 
             if (taxes != null)
             {
                 // format the table
-                subtotalAmount.Text = taxes.NetAmount.ToString();
-                pstAmount.Text = taxes.PstAmount.ToString();
-                hstAmount.Text = taxes.HstAmount.ToString();
-                gstAmount.Text = taxes.GstAmount.ToString();
-                totalPurchaseAmount.Text = taxes.TotalAmount.ToString();
+                subtotalAmount.Text = taxes.NetAmount.ToString("C2");
+                pstAmount.Text = taxes.PstAmount.ToString("C2");
+                hstAmount.Text = taxes.HstAmount.ToString("C2");
+                gstAmount.Text = taxes.GstAmount.ToString("C2");
+                totalPurchaseAmount.Text = taxes.TotalAmount.ToString("C2");
 
                 // show the results div with the results
                 results.Visible = true;
