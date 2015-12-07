@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using GIORP_TOTAL;
 using GIORP_TOTAL.Models;
 using HL7Library;
+using System.Diagnostics;
 
 namespace WebClient
 {
@@ -38,21 +39,39 @@ namespace WebClient
             try
             {
                 //  DRC|QUERY-SERVICE|<team name>|<team ID>|
-                msg.AddSegment(CommandDirectiveElement, QueryServiceElement, "PhantomPower", "0");
+                msg.AddSegment(CommandDirectiveElement, QueryServiceElement, "Phantom Power2", "1192" );
                 //  SRV|GIORP-TOTAL||||||
-                msg.AddSegment(ServiceDirectiveElement, "GIORP-TOTAL", "", "", "");
+                msg.AddSegment(ServiceDirectiveElement, "GIORP-TOTAL", "", "", "", "", "");
 
                 //Serialize the message
                 request = HL7Utility.Serialize(msg);
                 //Send the request
-                response = ServiceClient.SendRequest(request, "localhost", 15000);
+                response = ServiceClient.SendRequest(request, "10.113.21.151", 3128);
                 //Deserialize the response
-                msg = HL7Utility.Deserialize(response);   
+                msg = HL7Utility.Deserialize(response.TrimEnd('\n'));
 
+                if (msg.Segments[0].Elements[1] == SOAOkElement)
+                {
+                    errorServiceDiv.Visible = false;
+                    noServiceDiv.Visible = false;
+
+
+                }
+                else if (msg.Segments[0].Elements[1] == SOANotOkElement)
+                {
+                    ErrorMessageID.InnerText = msg.Segments[0].Elements[3];
+                    errorServiceDiv.Visible = true;
+                    noServiceDiv.Visible = false;
+                }
+                else
+                {
+                    errorServiceDiv.Visible = false;
+                    noServiceDiv.Visible = true;
+                }
             }
             catch(Exception ex)
             {
-
+                Debug.WriteLine(ex.ToString());
             }
         }
 

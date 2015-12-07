@@ -18,3 +18,481 @@ Message     : Response from Published Service at IP localhost, PORT 15000 :
 		>>RSP|5|TotalAmount|double|11.2|
 
 ********************************************************
+Date        : 9:19:37 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:19:37 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:19:37 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:11 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:20:11 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:11 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:24 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:20:24 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:24 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:47 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:20:47 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:48 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:22:14 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:22:14 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:22:14 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:24:32 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:24:32 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:24:32 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:25:17 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:25:17 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:25:17 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:27:34 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:27:34 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:27:34 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:31:15 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:31:16 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:31:16 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:32:08 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:32:08 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:32:08 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:34:44 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:35:30 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:37:39 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:39:25 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:39:37 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:40:13 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:41:22 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:41:56 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'PhantomPower' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:43:25 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:43:25 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'PhantomPower' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:43:40 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:43:40 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'PhantomPower' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:43:48 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:43:48 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Power' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:44:02 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:44:02 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Power' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:44:54 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1186|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:44:54 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 9:47:22 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1186|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:47:22 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 9:48:45 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:48:45 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 9:54:30 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:54:30 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 9:54:45 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:54:45 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 9:59:31 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:59:31 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:00:07 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:00:07 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:01:45 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:01:45 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:02:37 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:02:37 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:03:00 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|abc|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:03:00 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-5|Error executing SQL=[select teamID from Team where teamName='Phantom Powe' and teamID=abc;] - error=[Invalid column name 'abc'.]|
+
+********************************************************
+Date        : 10:05:49 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|abc|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:05:49 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-5|Error executing SQL=[select teamID from Team where teamName='Phantom Powe' and teamID=abc;] - error=[Invalid column name 'abc'.]|
+
+********************************************************
+Date        : 10:06:00 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|abc|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:06:00 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-5|Error executing SQL=[select teamID from Team where teamName='Phantom Powe' and teamID=abc;] - error=[Invalid column name 'abc'.]|
+
+********************************************************
+Date        : 10:06:10 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:06:10 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:07:32 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|123|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:07:32 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team '123' (ID : 2000) is not registered in DBase|
+
+********************************************************
