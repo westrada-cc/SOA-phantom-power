@@ -48,6 +48,19 @@ namespace WebClient
                     // Receive the response from the remote device.
                     int bytesRec = sender.Receive(bytes);
                     response = Encoding.ASCII.GetString(bytes, 0, bytesRec);
+                    var trimmedResponse = new StringBuilder();
+                    foreach(var character in response)
+                    {
+                        if (character == (char)28)
+                        {
+                            trimmedResponse.Append(HL7Library.HL7Utility.EndOfMessage);
+                            break;
+                        }
+
+                        trimmedResponse.Append(character);
+                    }
+
+                    response = trimmedResponse.ToString();
 
                     logClientMessage("Response from Published Service at IP " + serverName + ", PORT " + port.ToString() + " :", response);
 

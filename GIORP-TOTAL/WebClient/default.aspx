@@ -45,6 +45,10 @@
     <div>
         <h1>GIORP 5000 Total Purchase Totaller</h1>
         <br />
+        <h2 id="teamNameID" runat="server"></h2>
+        &nbsp;&nbsp;&nbsp;
+        <h2 id="serviceNameID" runat="server"></h2>
+        <br />
         <center>
         Total purchase price:
         <asp:TextBox ID="priceBox" runat="server" onkeypress="return isDecimal(event);"></asp:TextBox>

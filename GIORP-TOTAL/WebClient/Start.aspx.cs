@@ -54,7 +54,7 @@ namespace WebClient
                 //Serialize the message
                 request = HL7Utility.Serialize(msg);
                 //Send the request
-                response = ServiceClient.SendRequest(request, "10.113.21.151", 3128);
+                response = ServiceClient.SendRequest(request, "10.113.21.139", 3128);
                 //Deserialize the response
                 msg = HL7Utility.Deserialize(response.TrimEnd('\n'));
 
@@ -72,6 +72,7 @@ namespace WebClient
                     // load up the session variables
                     Session["TeamName"] = nameTextBox.Text;
                     Session["TeamID"] = idTextBox.Text;
+                    Session["ServiceTeamName"] = msg.Segments[1].Elements[1];
                     Session["ServiceName"] = msg.Segments[1].Elements[2];
                     Session["NumArgs"] = msg.Segments[1].Elements[4];
                     Session["ServiceDescription"] = msg.Segments[1].Elements[6];
