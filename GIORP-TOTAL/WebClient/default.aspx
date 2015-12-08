@@ -83,6 +83,9 @@
     </div>
 
     <div id="results" runat="server">
+
+
+        <!--
         <table>
             <tr>
                 <th>Subtotal Amount</th>
@@ -109,6 +112,21 @@
                 </td>
             </tr>
         </table>
+        -->
+        <asp:Label ID="response1" runat="server" Text="Response 1"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="response2" runat="server" Text="Response 2"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="response3" runat="server" Text="Response 3"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="response4" runat="server" Text="Response 4"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="response5" runat="server" Text="Response 5"></asp:Label>
+        <br />
     </div>
 
     <div id="alertDiv" runat="server"> 

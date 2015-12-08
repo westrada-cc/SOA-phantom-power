@@ -147,12 +147,28 @@ namespace WebClient
 
             if (taxes != null)
             {
+                // fill in the labels with the responses
+                try
+                {
+                    // go through each segment and get the second element (name of field) and forth element (value)
+                    response1.Text = msg.Segments[1].Elements[2] + ": " + msg.Segments[1].Elements[4];
+                    response2.Text = msg.Segments[2].Elements[2] + ": " + msg.Segments[2].Elements[4];
+                    response3.Text = msg.Segments[3].Elements[2] + ": " + msg.Segments[3].Elements[4];
+                    response4.Text = msg.Segments[4].Elements[2] + ": " + msg.Segments[4].Elements[4];
+                    response5.Text = msg.Segments[5].Elements[2] + ": " + msg.Segments[5].Elements[4];
+                }
+                catch (Exception ex)
+                {
+                    alert.Text = ex.Message;
+                    Logger.logException(ex);
+                }
+
                 // format the table
-                subtotalAmount.Text = taxes.NetAmount.ToString("C2");
-                pstAmount.Text = taxes.PstAmount.ToString("C2");
-                hstAmount.Text = taxes.HstAmount.ToString("C2");
-                gstAmount.Text = taxes.GstAmount.ToString("C2");
-                totalPurchaseAmount.Text = taxes.TotalAmount.ToString("C2");
+                //subtotalAmount.Text = taxes.NetAmount.ToString("C2");
+                //pstAmount.Text = taxes.PstAmount.ToString("C2");
+                //hstAmount.Text = taxes.HstAmount.ToString("C2");
+                //gstAmount.Text = taxes.GstAmount.ToString("C2");
+                //totalPurchaseAmount.Text = taxes.TotalAmount.ToString("C2");
 
                 // show the results div with the results
                 results.Visible = true;

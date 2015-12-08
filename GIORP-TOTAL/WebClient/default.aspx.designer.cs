@@ -130,6 +130,51 @@ namespace WebClient {
         protected global::System.Web.UI.WebControls.Label totalPurchaseAmount;
         
         /// <summary>
+        /// response1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label response1;
+        
+        /// <summary>
+        /// response2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label response2;
+        
+        /// <summary>
+        /// response3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label response3;
+        
+        /// <summary>
+        /// response4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label response4;
+        
+        /// <summary>
+        /// response5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label response5;
+        
+        /// <summary>
         /// alertDiv control.
         /// </summary>
         /// <remarks>
