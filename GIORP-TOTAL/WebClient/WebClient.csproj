@@ -96,16 +96,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GIORP-TOTAL\GIORP-TOTAL.csproj">
-      <Project>{cdfc418e-1b0c-4e49-b182-6ba96b791252}</Project>
-      <Name>GIORP-TOTAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HL7Library\HL7Library.csproj">
-      <Project>{d7a335b2-5b50-410c-8269-4cafc6c8b9fb}</Project>
-      <Name>HL7Library</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Start.aspx" />
     <Content Include="Web.config" />
     <Content Include="bin\WebClient.dll.config" />
@@ -120,6 +110,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GIORP-TOTAL\GIORP-TOTAL.csproj">
+      <Project>{cdfc418e-1b0c-4e49-b182-6ba96b791252}</Project>
+      <Name>GIORP-TOTAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HL7Library\HL7Library.csproj">
+      <Project>{d7a335b2-5b50-410c-8269-4cafc6c8b9fb}</Project>
+      <Name>HL7Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

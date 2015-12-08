@@ -61,9 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="bin\Debug\GIORP-TOTAL.exe.config" />
-    <None Include="bin\Debug\GIORP-TOTAL.vshost.exe.config" />
-    <None Include="bin\Debug\GIORP-TOTAL.vshost.exe.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,9 +75,6 @@
       <Project>{d7a335b2-5b50-410c-8269-4cafc6c8b9fb}</Project>
       <Name>HL7Library</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\GIORP-TOTAL.vshost.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

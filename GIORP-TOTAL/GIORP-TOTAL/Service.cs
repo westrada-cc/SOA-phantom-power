@@ -125,7 +125,7 @@ namespace GIORP_TOTAL
                         logServerMessage("Response from SOA-Registry :", registerServiceResponse);
                         Console.WriteLine("Response from SOA-Registry :" + registerServiceResponse);
 
-                        var registerServiceResponseMessage = HL7Utility.Deserialize(registerServiceMessage);
+                        var registerServiceResponseMessage = HL7Utility.Deserialize(registerServiceResponse);
                         if (registerServiceResponseMessage.Segments.Count > 0 &&
                             registerServiceResponseMessage.Segments[0].Elements.Count > 2 &&
                             registerServiceResponseMessage.Segments[0].Elements[0] == SOADirectiveElement &&

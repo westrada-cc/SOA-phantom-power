@@ -92,7 +92,7 @@ namespace WebClient
         private static void logClientMessage(string messageHeader, string HL7Message)
         {
             //Deserialize the message
-            Message tempMsg = HL7Utility.Deserialize(HL7Message);
+            Message tempMsg = HL7Utility.Deserialize(HL7Message.TrimEnd('\n'));
             StringBuilder sb = new StringBuilder();
 
             //Format the segments

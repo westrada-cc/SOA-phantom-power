@@ -18,3 +18,1331 @@ Message     : Response from Published Service at IP localhost, PORT 15000 :
 		>>RSP|5|TotalAmount|double|11.2|
 
 ********************************************************
+Date        : 9:19:37 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:19:37 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:19:37 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:11 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:20:11 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:11 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:24 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:20:24 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:24 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:47 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:20:47 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:20:48 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:22:14 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:22:14 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:22:14 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:24:32 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||
+
+********************************************************
+Date        : 9:24:32 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:24:32 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:25:17 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:25:17 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:25:17 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:27:34 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:27:34 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:27:34 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:31:15 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:31:16 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:31:16 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:32:08 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:32:08 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:32:08 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:34:44 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:35:30 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:37:39 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:39:25 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:39:37 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:40:13 AM
+Time        : 12/7/2015
+Error       : Message not in valid format. End of message char '' not found.
+Type        : System.ArgumentException
+********************************************************
+Date        : 9:41:22 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:41:56 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'PhantomPower' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:43:25 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:43:25 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'PhantomPower' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:43:40 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|PhantomPower|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:43:40 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'PhantomPower' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:43:48 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:43:48 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Power' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:44:02 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:44:02 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Power' (ID : 1192) is not registered in DBase|
+
+********************************************************
+Date        : 9:44:54 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1186|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:44:54 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 9:47:22 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1186|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:47:22 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 9:48:45 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:48:45 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 9:54:30 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:54:30 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 9:54:45 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:54:45 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 9:59:31 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 9:59:31 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:00:07 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:00:07 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:01:45 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:01:45 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:02:37 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:02:37 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:03:00 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|abc|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:03:00 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-5|Error executing SQL=[select teamID from Team where teamName='Phantom Powe' and teamID=abc;] - error=[Invalid column name 'abc'.]|
+
+********************************************************
+Date        : 10:05:49 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|abc|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:05:49 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-5|Error executing SQL=[select teamID from Team where teamName='Phantom Powe' and teamID=abc;] - error=[Invalid column name 'abc'.]|
+
+********************************************************
+Date        : 10:06:00 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|abc|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:06:00 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-5|Error executing SQL=[select teamID from Team where teamName='Phantom Powe' and teamID=abc;] - error=[Invalid column name 'abc'.]|
+
+********************************************************
+Date        : 10:06:10 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Powe|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:06:10 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team 'Phantom Powe' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:07:32 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|123|2000|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:07:32 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team '123' (ID : 2000) is not registered in DBase|
+
+********************************************************
+Date        : 10:22:03 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|||
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:22:03 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-2|DRC/QUERY-SERVICE segment not according to Spec.|
+
+********************************************************
+Date        : 10:23:48 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|||
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:23:48 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-2|DRC/QUERY-SERVICE segment not according to Spec.|
+
+********************************************************
+Date        : 10:24:14 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|123|200|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 10:24:14 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|NOT-OK|-4|Team '123' (ID : 200) is not registered in DBase|
+
+********************************************************
+Date        : 11:34:29 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 11:34:29 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 11:35:07 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 11:35:07 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 11:38:07 AM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 11:38:07 AM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 12:06:42 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:06:42 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:07:39 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:07:39 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:09:09 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:09:09 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 12:09:45 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:09:45 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:21 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:10:21 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:10:27 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:27 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:32 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:32 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:54 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:54 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:57 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:10:57 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:12:57 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:12:57 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:13:15 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power3|1189|
+		>>SRV||PP-GIORP-TOTAL||2|||
+		>>ARG|1|province|STRING||ON|
+		>>ARG|2|amount|DOUBLE||10|
+
+********************************************************
+Date        : 12:13:15 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|NOT-OK|Request not in valid format.|Make sure that you comply to SOA Registry message format.|
+
+********************************************************
+Date        : 12:14:46 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:14:46 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:14:50 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power3|1189|
+		>>SRV||PP-GIORP-TOTAL||2|||
+		>>ARG|1|province|STRING||NS|
+		>>ARG|2|amount|DOUBLE||10|
+
+********************************************************
+Date        : 12:14:50 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|NOT-OK|Request not in valid format.|Make sure that you comply to SOA Registry message format.|
+
+********************************************************
+Date        : 12:18:42 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:18:43 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:18:47 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:18:47 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:20:34 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:20:34 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:21:07 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power3|1189|
+		>>SRV||PP||2|||
+		>>ARG|1|province|STRING||NB|
+		>>ARG|2|amount|DOUBLE||10|
+
+********************************************************
+Date        : 12:21:07 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|NOT-OK|Request not in valid format.|Make sure that you comply to SOA Registry message format.|
+
+********************************************************
+Date        : 12:24:44 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:24:44 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 12:25:34 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:25:34 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:26:26 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power3|1189|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:26:26 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 12:28:04 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power2|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:28:04 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:28:14 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:28:14 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:28:44 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power2|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:28:44 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:28:52 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power2|1192|
+		>>SRV||PP-GIORP-TOTAL||2|||
+		>>ARG|1|province|STRING||MB|
+		>>ARG|2|amount|DOUBLE||10|
+
+********************************************************
+Date        : 12:28:52 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|NOT-OK|Request not in valid format.|Make sure that you comply to SOA Registry message format.|
+
+********************************************************
+Date        : 12:29:58 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power2|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:29:58 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power2|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:30:06 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power2|1192|
+		>>SRV||PP||2|||
+		>>ARG|1|province|STRING||MB|
+		>>ARG|2|amount|DOUBLE||10|
+
+********************************************************
+Date        : 12:30:06 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|NOT-OK|Request not in valid format.|Make sure that you comply to SOA Registry message format.|
+
+********************************************************
+Date        : 12:31:16 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power2|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:31:16 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 12:31:52 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:31:52 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:32:44 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power2|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:32:44 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 12:34:25 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power2|1192|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:34:25 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power3|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.145|4567|
+
+********************************************************
+Date        : 12:35:03 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:35:03 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.145:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:40:41 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1195|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:40:41 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:40:51 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:40:51 PM
+Time        : 12/7/2015
+Error       : No connection could be made because the target machine actively refused it 10.113.21.151:4567
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 12:41:45 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1195|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:41:45 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:41:52 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power|1195|
+		>>SRV||PP||2|||
+		>>ARG|1|province|STRING||AB|
+		>>ARG|2|amount|DOUBLE||10|
+
+********************************************************
+Date        : 12:41:52 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|NOT-OK|Request not in valid format.|Make sure that you comply to SOA Registry message format.|
+
+********************************************************
+Date        : 12:44:15 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1195|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:44:15 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:44:19 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power|1195|
+		>>SRV||PP||2|||
+		>>ARG|1|province|string||AB|
+		>>ARG|2|amount|double||11|
+
+********************************************************
+Date        : 12:44:19 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|OK|||5|
+		>>RSP|1|NetAmount|double|11|
+		>>RSP|2|PstAmount|double|0|
+		>>RSP|3|HstAmount|double|0|
+		>>RSP|4|GstAmount|double|0.55|
+		>>RSP|5|TotalAmount|double|11.55|
+
+********************************************************
+Date        : 12:46:45 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1195|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:46:45 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:46:50 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power|1195|
+		>>SRV||PP||2|||
+		>>ARG|1|province|string||NL|
+		>>ARG|2|amount|double||100|
+
+********************************************************
+Date        : 12:46:50 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|OK|||5|
+		>>RSP|1|NetAmount|double|100|
+		>>RSP|2|PstAmount|double|0|
+		>>RSP|3|HstAmount|double|13|
+		>>RSP|4|GstAmount|double|0|
+		>>RSP|5|TotalAmount|double|113|
+
+********************************************************
+Date        : 12:51:15 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1195|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:51:15 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:51:20 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power|1195|
+		>>SRV||PP||2|||
+		>>ARG|1|province|string||100|
+		>>ARG|1|province|string||MB|
+
+********************************************************
+Date        : 12:51:20 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|NOT-OK|Request not in valid format.|Make sure that you comply to SOA Registry message format.|
+
+********************************************************
+Date        : 12:53:59 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 3128 :
+		>>DRC|QUERY-SERVICE|Phantom Power|1195|
+		>>SRV|GIORP-TOTAL||||||
+
+********************************************************
+Date        : 12:53:59 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 3128 :
+		>>SOA|OK|||9|
+		>>SRV|Phantom Power|PP||2|5|Calculates taxes, net and total amount for certian Canadian province and amount.|
+		>>ARG|1|province|STRING|mandatory||
+		>>ARG|2|amount|DOUBLE|mandatory||
+		>>RSP|1|NetAmount|DOUBLE||
+		>>RSP|2|PstAmount|DOUBLE||
+		>>RSP|3|HstAmount|DOUBLE||
+		>>RSP|4|GstAmount|DOUBLE||
+		>>RSP|5|TotalAmount|DOUBLE||
+		>>MCH|10.113.21.151|4567|
+
+********************************************************
+Date        : 12:54:03 PM
+Time        : 12/7/2015
+Message     : Sending service request to IP 10.113.21.151, PORT 4567 :
+		>>DRC|EXEC-SERVICE|Phantom Power|1195|
+		>>SRV||PP||2|||
+		>>ARG|1|province|string||MB|
+		>>ARG|2|amount|double||10|
+
+********************************************************
+Date        : 12:54:03 PM
+Time        : 12/7/2015
+Message     : Response from Published Service at IP 10.113.21.151, PORT 4567 :
+		>>PUB|OK|||5|
+		>>RSP|1|NetAmount|double|10|
+		>>RSP|2|PstAmount|double|0.7|
+		>>RSP|3|HstAmount|double|0|
+		>>RSP|4|GstAmount|double|0.5|
+		>>RSP|5|TotalAmount|double|11.2|
+
+********************************************************
+Date        : 3:46:21 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.151:3128
+Type        : System.Net.Sockets.SocketException
+********************************************************
+Date        : 3:46:21 PM
+Time        : 12/7/2015
+Error       : A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.113.21.151:3128
+Type        : System.Net.Sockets.SocketException
+********************************************************
